@@ -1,0 +1,189 @@
+html { 
+    background: url(adventuretime.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Head of Finn */
+.head {
+    width: 48%;
+    height: 65%;
+    background-color: white;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    position: fixed;
+    top: 15%;
+    left: 12%;
+}
+
+.head_top {
+    height: 10%;
+    width: 33%;
+    position: fixed;
+    top: 13%;
+    left: 20%;
+    background: white;
+    border-top: 5px solid black;
+    border-radius: 60%;
+    z-index: 5;
+}
+
+.head_bottom {
+    height: 16%;
+    width: 48%;
+    position: fixed;
+    bottom: 12%;
+    left: 12.4%;
+    background: white;
+    border-bottom: 5px solid black;
+    border-radius: 60%;
+}
+
+.head_inner_layer{
+    height: 48%;
+    width: 35%;
+    position: fixed;
+    border: 5px solid black;
+    border-radius: 60%;
+    background: #feddce;
+    top: 26%;
+    left: 18.5%;
+}
+
+.ear_left {
+    width: 10%;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 5px solid black;
+    border-bottom: 0;
+    position: fixed;
+    top: 4%;
+    left: 13%;
+}
+
+.ear_right {
+    width: 10%;
+    height: 100px;
+    background-color: white;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 5px solid black;
+    border-bottom: 0;
+    position: fixed;
+    top: 4%;
+    right: 40%;
+}
+/* Head of Finn */
+
+/* Eyes of Finn */
+.eye_left{
+    height: 13%;
+    width: 7%;
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    background: black;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.eye_right{
+    height: 13%;
+    width: 7%;
+    position: fixed;
+    top: 35%;
+    right: 51%;
+    background: black;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.eye_left_inner_layer_part1{
+    height: 9%;
+    transform: rotate(55deg);
+    width: 3%;
+    position: fixed;
+    top: 34.8%;
+    left: 25.8%;
+    border-radius: 83px 44px 55px 74px;
+    background: white;
+}
+
+.eye_left_inner_layer_part2{
+    height: 6%;
+    transform: rotate(55deg);
+    width: 1%;
+    position: fixed;
+    top: 42.8%;
+    left: 30%;
+    border-radius: 50%;
+    background: white;
+}
+
+.eye_right_inner_layer_part1{
+    height: 9%;
+    transform: rotate(55deg);
+    width: 3%;
+    position: fixed;
+    top: 34.8%;
+    right: 54.5%;
+    border-radius: 83px 44px 55px 74px;
+    background: white;
+}
+
+.eye_right_inner_layer_part2{
+    height: 6%;
+    transform: rotate(55deg);
+    width: 1%;
+    position: fixed;
+    top: 42.8%;
+    right: 52%;
+    border-radius: 50%;
+    background: white;
+}
+/* Eyes of Finn */
+
+/* Mouth of Finn */
+.mouth{
+    height: 10%;
+    width: 15%;
+    position: fixed;
+    top: 58%;
+    left: 29%;
+    background: black;
+    border: solid black;
+    border-radius: 50%;
+}
+
+.mouth_teeth_part1 {
+
+}
+
+.mouth_teeth_part2{
+    
+}
+
+.mouth_teeth_part3 {
+
+}
+
+.mouth_bottom {
+
+}
+
+.mouth_left {
+
+}
+
+.mouth_right {
+
+}
+/* Mouth of Finn */
