@@ -395,3 +395,55 @@ html {
 }
 /* Body of Finn */
 
+/* Bagpack of Finn */
+.backpack_part1 {
+    height: 63%;
+    width: 35%;
+    position: fixed;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    background-color: #008000;
+    top: 66%;
+    left: 4%;
+    z-index: 0;
+}
+.backpack_part2 {
+    height: 63%;
+    width: 35%;
+    position: fixed;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    background-color: #008000;
+    top: 66%;
+    right: 31%;
+    z-index: 0;
+}
+
+.backpack_part3{
+    z-index: 3;
+    height: 11%;
+    width: 18.5%;
+    position: fixed;
+    left: 5.4%;
+    bottom: 3%;
+    background-color: #008000;
+    border: solid #000000;
+    transform: rotate(50deg);
+    border-left: 0;
+    border-radius: 35%;
+}
+
+.backpack_part4{
+    z-index: 3;
+    height: 11%;
+    width: 18.5%;
+    position: fixed;
+    right: 32.4%;
+    bottom: 3%;
+    background-color: #008000;
+    border: solid #000000;
+    transform: rotate(130deg);
+    border-left: 0;
+    border-radius: 35%;
+}
+/* Bagpack of Finn */
