@@ -7,6 +7,7 @@ html {
 }
 
 /* Head of Finn */
+
 .head {
     width: 48%;
     height: 65%;
@@ -17,6 +18,7 @@ html {
     position: fixed;
     top: 15%;
     left: 12%;
+    z-index: 2;
 }
 
 .head_top {
@@ -40,6 +42,7 @@ html {
     background-color: #ffffff;
     border-bottom: 5px solid #000000;
     border-radius: 60%;
+    z-index: 3;
 }
 
 .head_inner_layer{
@@ -51,11 +54,12 @@ html {
     background-color: #feddce;
     top: 26%;
     left: 18.5%;
+    z-index: 4;
 }
 
 .ear_left {
     width: 10%;
-    height: 100px;
+    height: 15%;
     background-color: #ffffff;
     border-top-left-radius: 110px;
     border-top-right-radius: 110px;
@@ -68,7 +72,7 @@ html {
 
 .ear_right {
     width: 10%;
-    height: 100px;
+    height: 15%;
     background-color: #ffffff;
     border-top-left-radius: 110px;
     border-top-right-radius: 110px;
@@ -90,6 +94,7 @@ html {
     background-color: #000000;
     border: solid #000000;
     border-radius: 50%;
+    z-index: 5;
 }
 
 .eye_right{
@@ -101,6 +106,8 @@ html {
     background-color: #000000;
     border: solid #000000;
     border-radius: 50%;
+    z-index: 5;
+    
 }
 
 .eye_left_inner_layer_part1{
@@ -108,10 +115,12 @@ html {
     transform: rotate(55deg);
     width: 3%;
     position: fixed;
-    top: 34.8%;
+    top: 34.7%;
     left: 25.8%;
-    border-radius: 83px 44px 55px 74px;
+    border-radius: 83% 44% 55% 74%;
     background-color: #ffffff;
+    z-index: 6;
+    animation: shake .1s infinite ease-in-out alternate;
 }
 
 .eye_left_inner_layer_part2{
@@ -123,6 +132,8 @@ html {
     left: 30%;
     border-radius: 50%;
     background-color: #ffffff;
+    z-index: 6;
+    animation: shake .1s infinite ease-in-out alternate;
 }
 
 .eye_right_inner_layer_part1{
@@ -130,10 +141,12 @@ html {
     transform: rotate(55deg);
     width: 3%;
     position: fixed;
-    top: 34.8%;
+    top: 34.7%;
     right: 54.5%;
-    border-radius: 83px 44px 55px 74px;
+    border-radius: 83% 44% 55% 74%;
     background-color: #ffffff;
+    z-index: 6;
+    animation: shake .1s infinite ease-in-out alternate;
 }
 
 .eye_right_inner_layer_part2{
@@ -142,9 +155,17 @@ html {
     width: 1%;
     position: fixed;
     top: 42.8%;
-    right: 52%;
+    right: 52.5%;
     border-radius: 50%;
     background-color: #ffffff;
+    z-index: 6;
+    animation: shake .1s infinite ease-in-out alternate;
+}
+
+@keyframes shake {
+    from { transform: translate(0.5px, 0.5px) rotate(55deg); }
+    to { transform: translate(-0.5px, -1px) rotate(55deg); }
+
 }
 /* Eyes of Finn */
 
@@ -158,49 +179,219 @@ html {
     background-color: #000000;
     border: solid #000000;
     border-radius: 50%;
+    z-index: 5;
 }
 
 .mouth_teeth_part1 {
     height: 3%;
     width: 2%;
     position: fixed;
-    top: 58%;
-    left: 33.8%;
-    border-radius: 50% 0% 50% 50%;
+    top: 58.8%;
+    left: 31.8%;
+    border-radius: 14% 21% 50% 50%;
     background-color: #ffffff;
+    transform: rotate(-12deg);
+    z-index: 6;
 }
 
 .mouth_teeth_part2{
     height: 3%;
     width: 2%;
     position: fixed;
-    top: 58%;
-    left: 38%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    top: 58.1%;
+    left: 35.8%;
+    border-radius: 14% 21% 50% 50%;
     background-color: #ffffff;
+    z-index: 6;
+
 }
 
 .mouth_teeth_part3 {
     height: 3%;
     width: 2%;
     position: fixed;
-    top: 58%;
-    left: 40%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    top: 58.9%;
+    left: 39.8%;
+    border-radius: 14% 21% 50% 50%;
     background-color: #ffffff;
+    transform: rotate(13deg);
+    z-index: 6;
 }
 
 .mouth_bottom {
-
+    height: 4%;
+    width: 6%;
+    position: fixed;
+    top: 66.8%;
+    left: 33.8%;
+    border-radius: 51%;
+    background-color: #feddce;
+    z-index: 6;
 }
 
 .mouth_left {
-
+    height: 10%;
+    transform: rotate(3deg);
+    width: 3%;
+    position: fixed;
+    top: 58%;
+    right: 54.5%;
+    border-radius: 50%;
+    border-left: solid #000000;
+    background-color: #feddce;
+    z-index: 6;
 }
 
 .mouth_right {
-
+    height: 10%;
+    transform: rotate(181deg);
+    width: 3%;
+    position: fixed;
+    top: 58%;
+    left: 28.5%;
+    border-radius: 50%;
+    border-left: solid #000000;
+    background-color: #feddce;
+    z-index: 6;
 }
 /* Mouth of Finn */
+
+/* Body of Finn */
+.body{
+    z-index: 1;
+    height: 25%;
+    width: 47.5%;
+    position: fixed;
+    bottom: 0%;
+    left: 12.4%;
+    background-color: #1E90FF;
+    border: solid #000000;
+}
+
+.arm_left{
+    z-index: 7;
+    height: 12%;
+    width: 35.5%;
+    position: fixed;
+    bottom: 0%;
+    left: 1.4%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    transform: rotate(130deg);
+    animation: hands-up_left 2s infinite ease-in-out alternate;
+}
+
+.arm_left_finger_part1 {
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 66%;
+    left: 30.2%;
+    transform: rotate(130deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_left 2s infinite ease-in-out alternate;
+}
+.arm_left_finger_part2 {
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 63.1%;
+    left: 28.7%;
+    transform: rotate(130deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_left 2s infinite ease-in-out alternate;
+}
+.arm_left_finger_part3 {
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 61.1%;
+    left: 27.1%;
+    transform: rotate(130deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_left 2s infinite ease-in-out alternate;
+}
+
+.arm_right{
+    z-index: 7;
+    height: 12%;
+    width: 35.5%;
+    position: fixed;
+    bottom: 0%;
+    right: 27.4%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    transform: rotate(50deg);
+    animation: hands-up_right 2s infinite ease-in-out alternate;
+}
+
+.arm_right_finger_part1{
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 66.1%;
+    left: 39.7%;
+    transform: rotate(50deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_right 2s infinite ease-in-out alternate;
+}
+
+.arm_right_finger_part2{
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 63.1%;
+    left: 40.7%;
+    transform: rotate(50deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_right 2s infinite ease-in-out alternate;
+}
+
+.arm_right_finger_part3{
+    z-index: 6;
+    height: 4%;
+    width: 4%;
+    position: fixed;
+    top: 61.1%;
+    left: 42.7%;
+    transform: rotate(50deg);
+    border-radius: 50%;
+    background-color: #feddce;
+    border: solid #000000;
+    border-left: 0;
+    animation: hands-up_right 2s infinite ease-in-out alternate;
+}
+
+@keyframes hands-up_right {
+    from { transform: translateY(0) translateX(0) rotate(50deg); }
+    to { transform: translateY(-50px) translateX(-60px) rotate(50deg); }
+}
+
+@keyframes hands-up_left {
+    from { transform: translateY(0) translateX(0) rotate(130deg); }
+    to { transform: translateY(-50px) translateX(60px) rotate(130deg); }
+}
+/* Body of Finn */
+
